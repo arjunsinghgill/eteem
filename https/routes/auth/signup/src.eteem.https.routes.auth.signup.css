@@ -1,0 +1,173 @@
+body, html, * {
+  border : 0px;
+  padding : 0px;
+  margin : 0px;
+  overscroll-behavior : none;
+  background-color : rgba(245,245,245,1);
+  text-align : center;
+}
+
+@font-face {
+  font-family: big_shoulders_regular; /* set name */
+  src: url(/fonts/big_shoulders_regular); /* url of the font */
+}
+
+@font-face {
+  font-family: montserrat_alternates_regular; /* set name */
+  src: url(/fonts/montserrat_alternates_regular); /* url of the font */
+}
+
+@font-face {
+  font-family: train_one_regular; /* set name */
+  src: url(/fonts/train_one_regular); /* url of the font */
+}
+
+
+@media only screen and (max-width: 700px) {
+  .title_main {
+    font-size: clamp(13vw,17vw,80px);
+    font-family: train_one_regular;
+    margin: 4vw;
+    padding : 5vw;
+    border: 2vw;
+    color : rgba(245,245,245,1);
+    background-color: rgba(45,45,45,1);
+    border-radius:13px;
+    text-decoration: none;
+  }
+  #tagline {
+    font-size: clamp(5vw,7vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 4vw;
+    padding : 2vw;
+    padding-left : 4vw;
+    padding-right : 4vw;
+    border: 3px solid rgba(45,45,45,1);
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+    border-radius:10px;
+  }
+  .text_main {
+    font-size: clamp(3vw,5vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 1vw;
+    padding : 1vw;
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+  }
+  #signup {
+    text-decoration:none;
+    font-size: clamp(5vw,7vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 1vw;
+    padding:2vw;
+    padding-left : 3vw;
+    padding-right : 3vw;
+    border: 3px solid rgba(45,45,45,1);
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+    border-radius:7px;
+  }
+  .form_label_dob {
+    text-decoration:none;
+    font-size: clamp(3vw,4vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 1vw;
+    padding:2vw;
+    padding-left : 3vw;
+    padding-right : 3vw;
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+    border-radius:7px;
+  }
+  .form_text_input {
+    text-decoration:none;
+    font-size: clamp(4vw,6vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 1vw;
+    padding:2vw;
+    padding-left : 3vw;
+    padding-right : 3vw;
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+    border-radius:7px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .title_main {
+    font-size: clamp(10vw,14vw,80px);
+    font-family: train_one_regular;
+    margin: 3vw;
+    padding : 3vw;
+    border: 2vw;
+    color : rgba(245,245,245,1);
+    background-color: rgba(45,45,45,1);
+    border-radius:13px;
+    text-decoration: none;
+  }
+  #tagline {
+    font-size: clamp(3.5vw,5vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 3vw;
+    padding : 2vw;
+    padding-left : 4vw;
+    padding-right : 4vw;
+    border: 3px solid rgba(45,45,45,1);
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+    border-radius:10px;
+  }
+  .text_main {
+    font-size: clamp(2.5vw,3vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 1vw;
+    padding : 1vw;
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+  }
+  #signup {
+    text-decoration:none;
+    font-size: clamp(3vw,4vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 1vw;
+    padding:2vw;
+    padding-left : 3vw;
+    padding-right : 3vw;
+    border: 3px solid rgba(45,45,45,1);
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+    border-radius:7px;
+  }
+  .form_label_dob {
+    text-decoration:none;
+    font-size: clamp(2vw,3vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 1vw;
+    padding:2vw;
+    padding-left : 3vw;
+    padding-right : 3vw;
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+    border-radius:7px;
+  }
+  .form_text_input {
+    text-decoration:none;
+    font-size: clamp(2.5vw,4vw,80px);
+    font-family: montserrat_alternates_regular;
+    margin: 1vw;
+    padding:2vw;
+    padding-left : 3vw;
+    padding-right : 3vw;
+    background-color : rgba(245,245,245,1);
+    color: rgba(45,45,45,1);
+    border-radius:7px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+

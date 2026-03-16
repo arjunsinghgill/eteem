@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ASG | eteem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Arjun Singh Gill Portfolio | eteem">
+    <link rel="stylesheet" type="text/css" href="/css/auth/login_passphrase">
+  </head>
+  <body>
+    <h1 class="title_main"><a class="title_main" href="/">eteem</a></h1>
+    <p id="tagline">end-to-end encrypted messenger</p>
+    <br>
+    <span>Please enter your passphrase. It should be a sentence 8 words or longer. Without it, you won't be able to decrypt your messages. We do not store this, it never leaves your browser, and gets deleted right after your login is complete. Please ensure your passphrase remains consistent.</span>
+    <form id="login_passphrase_form" action="/js/auth/login_passphrase">
+      <input class="form_text_input" type="text" id="passphrase" name="passphrase" placeholder="passphrase"><br>
+    <br>
+      <button id="login_passphrase" type="submit" >login-passphrase</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <script type="module" src='/js/auth/login_passphrase'></script>
+  </body>
+</html>
+
+

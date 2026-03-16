@@ -1,0 +1,47 @@
+Postgresql
+>> brew services restart postgresql
+>> psql postgres
+>> \c eteem_db
+>> \d
+
+
+- List databases
+>> \l
+
+- Change to database
+>> \c <databse_name>
+
+- list tables
+>> \d
+
+// To delete database
+DROP DATABASE <db_name>;
+
+// To create a database
+CREATE DATABASE eteem_db;
+
+- Change to database
+\c eteem_db;
+
+
+*** improtant to type out these messages as copy paste adds extra characters which cause errors ...
+
+- Create the user TABLE
+CREATE TABLE user (
+  user_id  SERIAL PRIMARY KEY,
+  uuid  VARCHAR(36) NOT NULL UNIQUE,
+  first_name VARCHAR(50) NOT NULL,
+  middle_name VARCHAR(50),
+  last_name VARCHAR(50),
+  date_of_birth DATE NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  username VARCHAR(255) NOT NULL UNIQUE,
+);
+
+- Create the password table
+CREATE TABLE user_password (
+  uuid VARCHAR(36) NOT NULL UNIQUE,
+  bcrypt_hash VARCHAR(60) NOT NULL UNIQUE,      // server side bcrypt password hash
+  salt VARCHAR(32) NOT NULL,                    // used by the client to derive asymmetric keys
+);
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ASG | eteem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Arjun Singh Gill Portfolio | eteem">
+    <link rel="stylesheet" type="text/css" href="/css/main">
+  </head>
+  <body>
+    <h1 class="title_main"><a class="title_main" href="/">eteem</a></h1>
+    <div id="contact_list">
+      <div class="contact_list_el"></div>
+      <div class="contact_list_el"></div>
+    </div>
+    <div id="contact_message">
+      <div class="contact_message_text" id="contact_message_div_text"></div>
+      <div class="contact_message_compose">
+        <form id="message_compose_form" action="/js/main">
+          <input type="text" id="message_compose_text" name="message_compose_text" placeholder="..."></input>
+          <button id="message_send_button" type="submit">send</button>
+        </form>
+      </div>
+    </div>
+    <div id="menu_message">
+      <button class="menu_button" id="menu_button_home">home</button>
+      <button class="menu_button" id="menu_button_compose">compose</button>
+      <button class="menu_button" id="menu_button_settings">settings</button>
+    </div>
+    <br>
+    <script type="module" src='/js/lib/DOMPurify'></script>
+    <script type="module" src='/js/main'></script>
+  </body>
+</html>
+
+
